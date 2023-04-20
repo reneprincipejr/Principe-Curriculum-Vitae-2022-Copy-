@@ -1,0 +1,269 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+\renewcommand{\baselinestretch}{1.2} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.25in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+  	\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large RENE L. PRINCIPE JR.} & Email : \href{mailto:mail@mail.com}{rlprincipe@up.edu.ph}\\ Kamagong Residence Hall, E. Jacinto St., UP Diliman, Quezon City 1101
+  & Mobile : +639672284183 \\
+  \href{https://rlprincipe.wixsite.com/reneprincipejr}{https://rlprincipe.wixsite.com/reneprincipejr}\\
+  \href{https://github.com/reneprincipejr}{https://github.com/reneprincipejr}\\
+\end{tabular*}
+
+%-----------OBJECTIVE-----------------
+\section{Research Interest}
+In my \href{https://rlprincipe.wixsite.com/reneprincipejr/thesis}{undergraduate research}, I performed color vision tasks such as hyperspectral reconstruction from digital RGB images using machine learning algorithms to cater art, heritage conservation, and remote sensing applications. For my master's thesis, I am currently working on using VIIRS nighttime lights data to assess the economic progress of resettlement areas and \href{https://github.com/reneprincipejr/Light-in-the-darkest-times}{ quantify electrification recovery rates in the aftermath of a disaster using the Black Marble product suite}.
+  
+%-----------EDUCATION-----------------
+\section{Education \footnote{\textit{*current standing}}}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {University of the Philippines Diliman}{Quezon City}
+      {M.S. Physics (GWA: 1.1071*)}{Aug 2020 - present}
+      
+    \resumeSubheading
+      {University of the Philippines Diliman}{Quezon City}
+      {B.S. Applied Physics - Instrumentation (GWA: 1.4839 - Cum Laude)}{Aug 2015 - June 2020}
+ 
+    %   \resumeItemListEnd 
+    \resumeSubHeadingListEnd   
+
+%-----------AFFILIATIONS-----------------
+
+\section{Affiliations}
+  \resumeSubHeadingListStart
+
+     \item{
+     \textbf{UP Data Science Society}{}
+     \hfill {\textit{Sep 2021 - present}}}
+     \item{
+     \textbf{UP Volleyball Club}{: Member, Faculty Adviser}
+     \hfill {\textit{Jun 2018 - present}}}
+     \item{
+     \textbf{Instrumentation Physics Laboratory (IPL)}{}
+     \hfill {\textit{Oct 2017 - present}}}
+     \item{
+     \textbf{UP Astronomical Society}{}
+     \hfill {\textit{Jun 2016 - present}}}
+     \item{
+     \textbf{Gerry Roxas Foundation Students' Society}{: Volunteer, Grantee}
+     \hfill {\textit{Aug 2016 - present}}}
+
+     \resumeSubHeadingListEnd   
+
+
+%-----------SCHOLARSHIPS-----------------
+\section{Scholarships}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{DOST-SEI}{: Full Merit}
+     \hfill {\textit{2015 - 2020}}
+     }
+\item{
+     \textbf{CHED-ESGPPA}{: for Pantawid Pamilyang Pilipino Program (4Ps) benefeciaries}
+     \hfill {\textit{2015 - 2020}}
+
+   }
+ \resumeSubHeadingListEnd
+
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Consultant - VIIRS Researcher}{Philippine Space Agency}{Fish Right}{July 2022 - October 2022}
+    \resumeItemListStart
+      \resumeItem{}
+          {VIIRS Boat Detection Algorithm ...}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Instructor III}{UP DILIMAN}{Junior Faculty, National Institute of Physics}{Aug 2020 - present}
+    \resumeItemListStart
+      	\resumeItem{}
+          {Taught courses ...}
+      \resumeItemListEnd
+    \resumeSubheading    
+      {On-the-Job Trainee}{IPL-VIP}
+      {DOST - Summer Practical Training Program}{Jun 2019 - July 2020}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Introductory machine learning for practical image processing}
+      \resumeItemListEnd
+        \resumeSubheading
+      {PhilCoMars Student Assistant}{IPL-VIP}
+      {Philippine Coral Reef and Mangrove Remote Sensing Project}{Sep 2018 - Dec 2018}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Ground truth classification of underwater panoramic images subjected to Convolutional Neural Network}
+      \resumeItemListEnd
+      \resumeSubheading
+      {COIN Student Assistant}{IPL-VIP}
+      {Cartography of Old Informs the New}{Jan 2018 - Mar 2018}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Perform ground truth on the road networks of old historical maps of Metro Manila}
+      \resumeItemListEnd
+        \resumeSubheading
+      {Student Researcher}{IPL-VIP}
+      {Video and Image Processing Group (VIP)}{Oct 2017 - present}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Video, image, and signal processing (VIP) for art and heritage conservation}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Publication and Features-----------------
+\section{Publication and Features}
+ \begin{itemize}
+
+     \item {\href{https://proceedings.spp-online.org/article/view/SPP-2022-3C-04}{RL Principe and MN Soriano, Revisiting the disaster impact and recovery in the aftermath of Typhoon Yolanda using Black Marble nighttime lights, Proceedings of the Samahang Pisika ng Pilipinas 40, SPP-2022-3C-04 (2022)}}.
+
+     \item {\href{https://proceedings.spp-online.org/article/view/SPP-2022-PA-08}{MJG Narag, RL Principe, and MN Soriano, Reconstructing the source modulated camera sensitivity of smartphone from principal component-driven Wiener estimation, Proceedings of the Samahang Pisika ng Pilipinas 40, SPP-2022-PA-08 (2022)}}.
+ 
+     \item {\href{https://proceedings.spp-online.org/article/view/SPP-2020-4C-06}{RL Principe and MN Soriano, Color error tendencies in spectral super-resolution, Proceedings of the Samahang Pisika ng Pilipinas, 38(1), SPP-2020-4C-0 (2020)}}.
+     
+     \item \textbf{Features:} {\href{https://www.facebook.com/photo?fbid=3443160952384277&set=a.157127907654281}{Graduation Essay}, \href{https://www.facebook.com/PhilippineSTAR/posts/1875491692604503}{PhilSTAR}, \href{https://www.facebook.com/gmanews/photos/a.126333131976/10159088372821977/?type=3&theater}{GMA News}, \href{https://www.facebook.com/rapplerdotcom/photos/a.317154781638645/3660737677280322/?type=3&theater}{Rappler}, \href{https://www.spot.ph/newsfeatures/newsfeatures-peopleparties/83040/interview-with-up-graduate-rene-principe-jr-a833-20200730?utm_source=Facebook-Spot&utm_medium=Ownshare&utm_campaign=20200730-fbnp-newsfeatures-interview-with-up-graduate-rene-principe-jr-a833-20200730-fbfirst&fbclid=IwAR32ERg7TPe8Wn9rBDl_2nc6RREReaKFPjU4JuswTHeipD5KklNGvtThCcQ}{Spot.ph}, \href{https://untappedph.org/blog/pride-in-stem}{untappedph.org}, \href{https://queerscientistsph.medium.com/rene-principe-jr-and-the-spectrum-of-success-6a68d4225290}{Queer Scientists PH}}
+     \href{https://www.facebook.com/chnge.ph/posts/344059733642133}{Change @chnge.ph}
+
+    \item {\textbf{Speaking Engagements:}
+     \href{https://www.facebook.com/bataa.ph/photos/a.1951120011639099/3180820575335697/?type=3}{bata.ph},
+     \href{https://www.facebook.com/consuelozobelalgerfoundation/posts/334371301309166}{Consuelo Zobel-Alger Foundation},
+     \href{https://www.facebook.com/aghamyouth/posts/3305109466202294}{Agham Youth UP Diliman}
+    \href{https://www.facebook.com/csfstmonth/posts/2399347003702185}{FSTOP},
+    \href{https://www.facebook.com/TheSanctuaryProjectPH/posts/182831526633582}{The Sancutary Project},
+    \href{https://www.facebook.com/samespacesafespace/posts/155639963075433}{Safe Spaces Summit}},
+    \href{https://www.facebook.com/dzrj810am/videos/88883270501709}{Radyo Turo Guro 1}
+     \href{https://www.facebook.com/dzrj810am/videos/295297878632939}{Radyo Turo Guro 2}, 
+     \href{https://www.facebook.com/updcollegeofscience/posts/541790330522631}{CS Pride}
+     \href{https://www.facebook.com/buklod.bu/photos/a.180573442047424/3677067869064613/}{Buklod - Bicol University},
+     \href{https://www.facebook.com/dzrhnews/videos/232967391976622/}{Radyo Henyo}
+
+\end{itemize}
+
+%--------International Conferences------------
+\section{Conferences and Workshops}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{\href{http://www.icvs.info/index.php}{International Color Vision Society Summer School (UK)}}{- Philippine delegate - online}
+     \hfill {\textit{Aug 3-5, 2020}}
+     }
+    \item{
+     \textbf{\href{https://spp-online.org/spp2020/}{Samahang Pisika ng Pilipinas Physics Conference 2020}}{- Plenary Presenter}
+     \hfill {\textit{Oct 19-23, 2020}}
+     }
+    \item{
+     \textbf{\href{https://spacegeneration.org/sgc2021}{Space Generation Congress 2021 (Dubai)}}{- Philippine delegate - online}
+     \hfill {\textit{Oct 21-23, 2021}}
+    }
+    \item{
+    \textbf{\href{https://www.aprsaf.org/annual_meetings/aprsaf27/side_events.php}{APOSA Cosmic Sandbox Workshop 2021}}{- Philippine delegate - online}
+    \hfill {\textit{Nov 13-27, 2021}}
+    }
+    \item{
+     \textbf{\href{https://spacegeneration.org/ap-sgow-2021}{Asia-Pacific Space Generation Online Workshop (AP-SGOW) 2021}}{- Philippine delegate}
+     \hfill {\textit{Dec 11-19, 2021}}
+    }
+
+    \item{
+     \textbf{\href{https://spp-online.org/spp2020/}{Samahang Pisika ng Pilipinas Physics Conference 2022 @ Legazpi}}{- Plenary/Poster}
+     \hfill {\textit{Oct 19-21, 2020}}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+%
+%--------TECHNICAL SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming}{: Python, MATLAB, Julia, C++ for Arduino}
+     }
+    \item{
+     \textbf{Other Tools}{: Agisoft (3D), Minitab, Autocad, MS Office, \LaTeX, \href{https://github.com/reneprincipejr}{Github}}
+    }
+    % \item{
+    % \textbf{Other Skills}{: College volleyball varsity, Make-up Artist, Public/Motivational Speaker}
+    % }
+ \resumeSubHeadingListEnd
+
+\end{document}
